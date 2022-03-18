@@ -28,9 +28,9 @@ class Restaurant
      * @ORM\Column(type="text", nullable=true)
      */
     private $description;
-
+    
     /**
-     * @ORM\Column(type="datetime_immutable", nullable=true)
+     * @ORM\Column(name="created_at", type="datetime_immutable", options={"default":"CURRENT_TIMESTAMP"}) 
      */
     private $created_at;
 

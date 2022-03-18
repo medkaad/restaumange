@@ -26,9 +26,9 @@ class Review
      * @ORM\Column(type="integer", nullable=true)
      */
     private $rating;
-
+    
     /**
-     * @ORM\Column(type="datetime_immutable", nullable=true)
+     * @ORM\Column(name="created_at", type="datetime_immutable", options={"default":"CURRENT_TIMESTAMP"}) 
      */
     private $created_at;
 
